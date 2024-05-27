@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('anime-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chat-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#messages {
+    list-style: none;
+    padding: 0;
+}
+
+#messages li {
+    margin: 10px 0;
+}
+
+#message-form {
+    display: flex;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#message-form button {
+    padding: 10px;
+    font-size: 1em;
+    background: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
